@@ -5,7 +5,7 @@ import {
     sendWelcomeEmail,
     sendPasswordResetEmail,
     sendResetSuccessEmail} from '../mailtrap/email.js'
-    import User from '../models/user.model.js'
+    import {User} from '../models/user.model.js'
 
 
 export const signup = async(req,res)=>{
@@ -102,3 +102,5 @@ export const logout = async(req,res)=>{
         "Logged Out successfully!"
     })
 }
+
+
