@@ -7,9 +7,8 @@ dotenv.config();
 
 const app = express();
 
-// ✅ Add middleware to parse JSON and URL-encoded data
-app.use(express.json());  // Parses incoming JSON payloads
-app.use(express.urlencoded({ extended: true }));  // Parses URL-encoded data
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true }));
 
 // Test route
 app.get("/", (req, res) => {
